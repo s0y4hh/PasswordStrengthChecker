@@ -32,7 +32,7 @@ def check_password_strength(password):
     else:
         feedback += "❌ Missing numbers.  🔢"
 
-    if re.search(r"[!@#$%^&*(),.?":{}|<>]", password):
+    if re.search(r"[!@#$%^&*(),.?\":{}|<>]", password):
         score += 1
         feedback += "✅ Contains symbols.   symbols"
     else:
