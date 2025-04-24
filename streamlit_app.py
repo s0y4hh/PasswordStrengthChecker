@@ -112,7 +112,7 @@ def main():
         -   Includes numbers 🔢 and symbols~!@#
         -    Unique (not used for any other account) 🔑
         """)
-    password = st.text_input("\t\t\tEnter your password:", type="password")
+    password = st.text_input("Enter your password:", type="password")
     if password:
         check_password_strength(password)
 
